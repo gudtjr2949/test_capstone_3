@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="entire">
+      <div style="text-align: center; margin-top: 180px">
+        <h1>유튜브 댓글 분석 서비스</h1>
+
+        <form method="POST" action="geturl/">
+          {% csrf_token %}
+          <input type="text" name="urlbox" />
+          <input type="submit" class="btn" value="검색" name="mybtn" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
